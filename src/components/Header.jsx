@@ -90,7 +90,7 @@ function Header() {
               viewport={{ once: true }}
               transition={{ duration: 2, ease: "easeOut" }}
             >
-              <i className="fa-solid fa-tags"></i> Hot Deals
+              <i className="fa-solid fa-tags"></i> All Categories
             </motion.h2>
           </div>
 
@@ -161,7 +161,6 @@ function Header() {
                 </button>
               </form>
               <div className="header_icons">
-                <i className="fa-solid fa-magnifying-glass mobile-search"></i>
                 <div className="icon">
                   <a href="#">
                     <i className="fa-regular fa-heart"></i>
