@@ -9,7 +9,7 @@ function ProductSlider() {
   const products = [...Array(8)];
 
   return (
-    <div className="slider_products slide">
+    <div className="slider_products slide" data-aos="fade-up">
       <div className="container">
         <div className="top_slide">
           <motion.h2

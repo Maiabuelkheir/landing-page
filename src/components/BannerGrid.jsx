@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function BannerGrid() {
   return (
     
-   <div className="banners_4">
+   <div className="banners_4" data-aos="fade-left">
          
   <div className="container">
     {["1","2","3","4"].map((num) => (

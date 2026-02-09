@@ -7,12 +7,11 @@ import "swiper/css/navigation";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const products = [...Array(25)]; // منتجات تجريبية
+  const products = [...Array(25)]; 
 
   return (
     <div className="landing-page">
       <div className="container">
-        {/* Main Header */}
         <header className="lp-header">
           <div className="logo">
             <img src="./img/logo.jpg" alt="Logo" className="logo-img" />
@@ -29,7 +28,7 @@ function Header() {
           </div>
         </header>
 
-        {/* Mobile Menu */}
+
         <div className={`mobile-nav ${menuOpen ? "active" : ""}`}>
           <i
             className="fa-solid fa-xmark close-btn"
@@ -54,7 +53,6 @@ function Header() {
           </ul>
         </div>
 
-        {/* Hero Section */}
         <section className="hero">
           <div className="hero-text">
             <h1>Discover Amazing Products</h1>
@@ -62,8 +60,7 @@ function Header() {
             <button className="cta-btn">Shop Now</button>
           </div>
 
-          {/* Animated Hero Images */}
-          <div className="hero-images">
+          <div className="hero-images" data-aos="fade-up">
             {["1.png", "2.png", "3.png"].map((img, i) => (
               <motion.img
                 key={i}
@@ -85,7 +82,7 @@ function Header() {
         </section>
 
         {/* Product Slider Section */}
-        <section className="product-slider-section">
+        <section className="product-slider-section" data-aos="fade-up">
           <div className="top_slide">
             <motion.h2
               initial={{ x: 1000 }}
@@ -114,7 +111,7 @@ function Header() {
           >
             {products.map((_, i) => (
               <SwiperSlide key={i}>
-                <div className="product-card">
+                <div className="product-card" data-aos="fade-up">
                   <img src={`./img/product/${i}.png`} alt={`Product ${i}`} />
                   <p>Product {i + 1}</p>
                   <div className="price">

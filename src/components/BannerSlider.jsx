@@ -15,7 +15,7 @@ function BannerSlider() {
             autoplay={{ delay: 3000 }}
             pagination={{ clickable: true }}
           >
-            <SwiperSlide>
+            <SwiperSlide data-aos="fade-up">
               <a href="#">
                 <img src="img/banner_home1.png" alt="Banner 1" />
               </a>
