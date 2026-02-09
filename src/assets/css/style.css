@@ -816,15 +816,6 @@ position: absolute;
 
 
 
-@media (max-width:768px){
-    .slider .banner_2 {
-        flex: 1 1 100%; 
-        max-width: 100%;
-    }
-    .slider .container .slide-swp{
-        width: 100%;
-    }
-}
 .promo-section {
   display: flex;
   justify-content: center;
@@ -869,4 +860,18 @@ position: absolute;
 }
 .footer P{
       color: white !important;
+}
+
+
+@media (max-width:768px){
+    .slider .banner_2 {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+    .slider .container .slide-swp{
+        width: 100%;
+    }
+    .promo-img{
+        width: 35%;
+    }
 }
