@@ -1,9 +1,12 @@
-     
-     function Footer() {
+import React from "react";
 
-     <footer>
-        <p>&copy; 2026 MyShop. All rights reserved.</p>
-      </footer>
-     }
-     
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <p>&copy; 2026 MyShop. All rights reserved.</p>
+    </footer>
+  );
+}
+
 export default Footer;

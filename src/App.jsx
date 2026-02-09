@@ -3,7 +3,7 @@ import LandingPage from './components/Header';
 import BannerGrid from './components/BannerGrid';
 import BannerSlider from './components/BannerSlider';
 import ProductSlider from './components/ProductSlider';
-
+import Footer from './components/Footer';
 
 import './assets/css/style.css';
 
@@ -14,6 +14,7 @@ function App() {
       <BannerSlider />
       <BannerGrid />
       <ProductSlider />
+      <Footer />
     </div>
   );
 }
