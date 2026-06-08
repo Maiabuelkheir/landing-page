@@ -4,6 +4,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -212,12 +213,12 @@ function Header() {
                 </ul>
               </nav>
               <div className="login_signup btns">
-                <a href="#" className="btn">
-                  Login <i className="fa-solid fa-right-to-bracket"></i>
-                </a>
-                <a href="#" className="btn">
+               <Link to="/login" className="btn">
+  Login <i className="fa-solid fa-right-to-bracket"></i>
+</Link>
+                 <Link to="/signup" className="btn">
                   Sign UP <i className="fa-solid fa-user-plus"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
